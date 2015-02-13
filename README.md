@@ -21,7 +21,7 @@ For now, clone the repo if you want it!
 
 #USAGE
 
-##Tradition calls
+##Traditional calls
 
     var ping = require('ping');
 
@@ -34,6 +34,21 @@ For now, clone the repo if you want it!
             console.log("Host", host, "is reachable!");
           }
         });
+    });
+
+##Traditional calls with configurable pin options
+
+    hosts.forEach(function(host) {
+      ping(host, {
+        timeout: 10,
+        extra: ["-i", "2"]
+      }, function(err, isAlive) {
+        if (err) {
+          console.log("Host", host, " is unreachable: ", err.message);
+        } else {
+          console.log("Host", host, "is reachable!");
+        }
+      });
     });
 
 ##Promise wrapper
@@ -49,9 +64,8 @@ For now, clone the repo if you want it!
         });
     });
 
-##Promise Wrapper with configable ping options
+##Promise Wrapper with configurable ping options
 
-    //Only promise wrapper supports configable ping options
     hosts.forEach(function(host) {
       ping(host, {
           timeout: 10,
