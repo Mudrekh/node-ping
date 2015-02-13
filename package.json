@@ -1,18 +1,18 @@
 {
-  "author": "danielzzz <daniel@zelisko.net> (http://daniel.zelisko.net)",
+  "author": "Daniel Zelisko <daniel@zelisko.net>,  Mudrekh <mudrekh@gmail.com>",
   "name": "ping",
   "description": "a simple wrapper for ping",
-  "version": "0.1.9",
-  "homepage": "http://github.com/danielzzz/node-ping",
+  "version": "0.0.1",
+  "homepage": "http://github.com/Mudrekh/node-ping",
   "repository": {
     "type": "git",
-    "url": "git://github.com/danielzzz/node-ping.git"
+    "url": "git://github.com/Mudrekh/node-ping.git"
   },
   "engines": {
-    "node": ">=0.6.2"
+    "node": ">=0.10.36"
   },
   "dependencies": {
-    "q": "1.x"
+    "bluebird": "^2.9.9"
   },
   "devDependencies": {},
   "main": "index.js"

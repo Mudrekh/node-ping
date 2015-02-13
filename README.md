@@ -3,9 +3,9 @@ a ping wrapper for nodejs
 
 #LICENSE MIT
 
-(C) Daniel Zelisko
+(C) Daniel Zelisko, Mudrekh Goderya
 
-http://github.com/danielzzz/node-ping
+http://github.com/Mudrekh/node-ping
 
 #DESCRIPTION
 
@@ -23,9 +23,12 @@ npm install ping
 
     var hosts = ['192.168.1.1', 'google.com', 'yahoo.com'];
     hosts.forEach(function(host){
-        ping.sys.probe(host, function(isAlive){
-            var msg = isAlive ? 'host ' + host + ' is alive' : 'host ' + host + ' is dead';
-            console.log(msg);
+        ping(host, function(err, isAlive){
+          if(err){
+            console.log("Host", host, " is unreachable: ", err.message);
+          } else {
+            console.log("Host", host, "is reachable!");
+          }
         });
     });
 
@@ -35,22 +38,23 @@ npm install ping
 
     var hosts = ['192.168.1.1', 'google.com', 'yahoo.com'];
 
-    hosts.forEach(function (host) {
-        ping.promise.probe(host)
-            .then(function (res) {
-                console.log(res);
-            });
+    hosts.forEach(function(host) {
+      ping(host)
+        .then(function(res) {
+          console.log(res);
+        });
     });
 
 ##Promise Wrapper with configable ping options
 
     //Only promise wrapper supports configable ping options
-    hosts.forEach(function (host) {
-        ping.promise.probe(host, {
-            timeout: 10,
-            extra: ["-i 2"]
-        }).then(function (res) {
-                console.log(res);
-            });
+    hosts.forEach(function(host) {
+      ping(host, {
+          timeout: 10,
+          extra: ["-i", "2"]
+        })
+        .then(function(res) {
+          console.log(res);
+        });
     });
 
