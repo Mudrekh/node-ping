@@ -36,7 +36,7 @@ For now, clone the repo if you want it!
         });
     });
 
-##Traditional calls with configurable pin options
+##Traditional calls with configurable ping options
 
     hosts.forEach(function(host) {
       ping(host, {
