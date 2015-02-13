@@ -11,6 +11,10 @@ http://github.com/Mudrekh/node-ping
 
 node-ping is a simple wrapper for the system ping utility
 
+This version is a bluebird port of node-ping by Daniel Zelisko, it modifies the
+export to be a single ping function that returns a promise as well as accepts
+normal node-style callbacks using bluebird's handy promise.nodeify() call.
+
 #INSTALLATION
 
 npm install ping
