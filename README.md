@@ -17,7 +17,7 @@ normal node-style callbacks using bluebird's handy promise.nodeify() call.
 
 #INSTALLATION
 
-npm install ping
+For now, clone the repo if you want it!
 
 #USAGE
 
