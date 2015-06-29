@@ -19,6 +19,10 @@ normal node-style callbacks using bluebird's handy promise.nodeify() call.
 
 For now, clone the repo if you want it!
 
+#TEST IT!
+
+npm test
+
 #USAGE
 
 ##Traditional calls
