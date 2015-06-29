@@ -2,7 +2,7 @@
   "author": "Daniel Zelisko <daniel@zelisko.net>,  Mudrekh Goderya <mudrekh@gmail.com>",
   "name": "ping-bluebird",
   "description": "a simple wrapper for ping",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "http://github.com/Mudrekh/node-ping",
   "repository": {
     "type": "git",
