@@ -17,7 +17,7 @@ normal node-style callbacks using bluebird's handy promise.nodeify() call.
 
 #INSTALLATION
 
-For now, clone the repo if you want it!
+npm i ping-bluebird
 
 #TEST IT!
 
