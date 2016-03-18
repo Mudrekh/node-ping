@@ -2,7 +2,7 @@
   "author": "Daniel Zelisko <daniel@zelisko.net>,  Mudrekh Goderya <mudrekh@gmail.com>",
   "name": "ping-bluebird",
   "description": "a simple wrapper for ping",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "http://github.com/Mudrekh/node-ping",
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
     "node": ">=0.10.36"
   },
   "dependencies": {
-    "bluebird": "^2.9.9"
+    "bluebird": "^3.3.4"
   },
   "devDependencies": {
     "mocha": "^2.2.5",
@@ -21,5 +21,6 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha"
-  }
+  },
+  "keywords": ["ping", "bluebird"]
 }
